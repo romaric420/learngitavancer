@@ -22,6 +22,7 @@ const Cookies = () => {
                     <p key={index} className="cookies-text">{paragraph}</p>
                 ))}
             </div>
+            <h1>bonjour le monde</h1>
         </div>
     );
 };
