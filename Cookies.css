@@ -1,0 +1,75 @@
+.cookies-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px);
+    width: 90%;
+    max-width: 880px;
+    background: #fff;
+    padding: 40px 70px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: auto auto 30px auto;
+}
+
+
+.cookies-header .cookies-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--aalia-black);
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.cookies-divider {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--aalia-blue) 0%, var(--aalia-green) 100%);
+    margin: 10px auto 30px;
+    border-radius: 2px;
+    transition: width 0.3s ease-in-out;
+}
+
+.cookies-header:hover .cookies-divider {
+    width: 100%;
+}
+
+.cookies-content {
+    font-size: 1.2rem;
+    text-align: left;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+.cookies-text {
+    margin-bottom: 15px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.cookies-text::before {
+    content: "●";
+    color: var(--aalia-blue);
+    font-size: 1rem;
+    position: absolute;
+    left: -15px;
+    top: 4px;
+}
+
+@media (max-width: 768px) {
+    .cookies-container {
+        width: 95%;
+        padding: 30px;
+    }
+
+    .cookies-title {
+        font-size: 1.8rem;
+    }
+
+    .cookies-content {
+        font-size: 1rem;
+    }
+}
